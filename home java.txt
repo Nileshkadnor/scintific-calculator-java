@@ -1,0 +1,35 @@
+try{
+    num1 = Double.parseDouble(toDisplay);
+}
+catch(NumberFormatException e1){
+    System.out.println("You have not entered a number");
+}
+double[] arr = new double[10];
+for(int i=0; i<arr.length;i++){
+    arr[i]=num1;
+    String test = String.valueOf(arr[i]);
+    tf.setText(test);
+}
+double []num1=new double[10];
+    double []num2=new double[10];
+    //double num1 = 0;
+    double temp =0;
+    String str[] = new String [10];
+    String []str1 = new String[10];
+    if(e.getActionCommand().equals("+"))
+    if(e.getSource() == opButtonEquals)
+        for( int i = 0; i<alreadyDisplayed.length(); i++){
+
+            if(alreadyDisplayed.charAt(i)=='+')
+             str[i] = alreadyDisplayed.substring(0,i);
+             num1[i] = Double.parseDouble(str[i]);
+             str1[i+1] = alreadyDisplayed.substring(i+1,alreadyDisplayed.length());
+             num2[i+1] = Double.parseDouble(str1[i]);
+
+             temp += num1[i] + num2[i+1];
+
+            tf.setText(Double.toString(temp));
+
+        }System.out.println(temp);
+    }
+}
